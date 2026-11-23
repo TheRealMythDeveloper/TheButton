@@ -14,16 +14,23 @@ TechnicallyCorrect
 ];
  
 
-
+let button = document.getElementById("bigButton");
 function pressButton() {
     let effect = effects[Math.floor(Math.random() * effects.length)];
     effect();
 }
+button.addEventListener("click", pressButton);
+
+
+
  
 function washingMachine(number) {
-    for (number in number) {
-        document.body.style.transform = "rotate(2dedg)";
-    }
+    let number = Math.floor(Math.random() * 10) +1;
+
+    document.body.style.transform = "transform 2s ease-in-out";
+    document.body.style.transform = `rotate(${360 * (i+1)}deg)`;
+   
+        
 }
 function growPage() {
     document.getElementById("bigButton").style.transform = "scale(2.75)";
