@@ -2,10 +2,8 @@ const effects = [
 shrinkPage,
 washingMachine,
 crunchyColors,
-//crunchyAudio, 
-//possibly ^
 notification,
-//spawnParticles,
+spawnParticles,
 growPage,
 //buttonExplode,
 askew,
@@ -13,7 +11,54 @@ askew,
 //TechnicallyCorrect
 ];
  
-  
+let particleAnimation;
+let particles = [];
+
+function animateParticles() {
+    for (let p of particles) {
+        p.x+= p.velocityx;
+        p.y += p.velocityy;
+        if (p.x <= 0 || p.x >= window.innerWidth-7) {
+            p.velocityx *= -1;
+        }
+        if (p.y <= 0 || p.y >= window.innerHeight - 7) {
+            p.velocityy *= -1;
+        }
+        p.element.style.left = p.x + "px";
+        p.element.style.top = p.y + "px";
+    }
+    particleAnimation = requestAnimationFrame(animateParticles);
+}
+
+function spawnParticles() {
+cancelAnimationFrame(particleAnimation);
+document.querySelectorAll(".particle").forEach(p => p.remove());
+
+particles = [];
+
+for (let i = 0; i < 120; i++) {
+    let p = document.createElement("div");
+    p.classList.add("particle")
+    //squareorcircle
+    if (Math.random() > 0.5) {
+        p.style.borderRadius = "50%";
+    }
+    //color
+    p.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 50%)`;
+
+let x = Math.random() * window.innerWidth;
+let y = Math.random() * window.innerHeight;
+
+let velocityx = (Math.random() - 0.5) * 24;
+let velocityy = (Math.random() - 0.5) * 24;
+document.body.appendChild(p);
+
+particles.push({element:p, x:x, y:y, velocityx:velocityx, velocityy:velocityy
+
+});
+}
+animateParticles();
+}
 
 
 function crunchyColors() {
@@ -88,12 +133,13 @@ function blueReset() {
     document.body.removeAttribute("style");
     document.body.className = ""; 
     spinAmount = 0;
-
+cancelAnimationFrame(particleAnimation);
+particles = [];
     const button = document.getElementById("bigButton");
     button.removeAttribute("style");
  alreadySkewed = false;
 
-    document.querySelectorAll(".temporary").forEach(el => el.remove());
+    document.querySelectorAll(".temporary, .particle").forEach(el => el.remove());
 let counter = document.getElementById("pressCount");
 
 if (counter) counter.textContent = "0";

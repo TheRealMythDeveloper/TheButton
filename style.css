@@ -53,4 +53,13 @@ z-index:1;
 #gradient {
         background: radial-gradient(circle at center, white 0%, #777 35%, black 100%);
 
+
+        
+}
+.particle {
+    width: 7;
+    height: 7;
+    z-index: 999;
+    position:fixed;
+    pointer-events: none;
 }
