@@ -1,5 +1,5 @@
  #body {
-    background: radial-gradient(circle at center, white 0%, #777 35%, black 100%);
+    background-color: radial-gradient(circle at center, white 0%, #777 35%, black 100%);
     
     text-align: center;
  }
@@ -10,12 +10,12 @@
     position: center;
     justify-content: center;
     align-items: center;
-    
+    aspect-ratio: 1;
     display:block;
     margin: 0 auto;
     display: flex;
-    height: 500px;
-    width: 500px;
+    height: 100px;
+    width: 100px;
     position:absolute;
     left: 50%;
     top: 50%;
