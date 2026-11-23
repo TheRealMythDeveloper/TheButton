@@ -1,6 +1,6 @@
  #body {
-    background-color: radial-gradient(circle at center, white 0%, #777 35%, black 100%);
-    
+    background: radial-gradient(circle at center, white 0%, #777 35%, black 100%);
+    overflow: hidden;
     text-align: center;
  }
  #bigButton {
@@ -20,6 +20,7 @@
     left: 50%;
     top: 50%;
     border-radius: 50%;
+    z-index:2;
  }
 
 
@@ -27,9 +28,7 @@
 	animation: deepfry infinite 2s alternate;
 }
 
-img{
-width: 100%;
-}
+
 @keyframes deepfry{
     from{
         filter:contrast(0.001) brightness(0.9996) blur(0.1px) contrast(1000);
@@ -41,4 +40,17 @@ width: 100%;
 
 * {
     justify-content: center;
+}
+
+h1{
+align-items: center;
+justify-content: center;
+position: center;
+padding-bottom: 70%;
+z-index:1;
+}
+
+#gradient {
+        background: radial-gradient(circle at center, white 0%, #777 35%, black 100%);
+
 }
