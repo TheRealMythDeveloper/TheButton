@@ -1,16 +1,16 @@
 const effects = [
 shrinkPage,
 washingMachine,
-crunchyColors,
-crunchyAudio, 
+//crunchyColors,
+//crunchyAudio, 
 //possibly ^
-notification,
-spawnParticles,
+//notification,
+//spawnParticles,
 growPage,
-buttonExplode,
-askew,
-partiallyWrongSpelling,
-TechnicallyCorrect
+//buttonExplode,
+//askew,
+//partiallyWrongSpelling,
+//TechnicallyCorrect
 ];
  
 
@@ -35,7 +35,7 @@ function washingMachine(number) {
 function growPage() {
     document.getElementById("bigButton").style.transform = "scale(2.75)";
 }
-function shrinkPagePage() {
+function shrinkPage() {
     document.getElementById("bigButton").style.transform = "scale(0.25)";
 }
     
