@@ -22,13 +22,13 @@ function pressButton() {
 button.addEventListener("click", pressButton);
 
 
-
+ let spinAmount = 0;
  
-function washingMachine(number) {
+function washingMachine() {
     let number = Math.floor(Math.random() * 10) +1;
-
-    document.body.style.transform = "transform 2s ease-in-out";
-    document.body.style.transform = `rotate(${360 * (i+1)}deg)`;
+spinAmount += 360 * number;
+    document.body.style.transition = "transform 2s ease-in-out";
+    document.body.style.transform = `rotate(${spinAmount}deg)`;
    
         
 }
@@ -40,15 +40,17 @@ function shrinkPage() {
 }
     
 
-
+document.getElementById("blueButton").addEventListener("click", blueReset);
 function blueReset() {
     document.body.removeAttribute("style");
     document.body.className = "";
+    spinAmount = 0;
+
     const button = document.getElementById("bigButton");
     button.removeAttribute("style");
 
     document.querySelectorAll(".temporary")
     .forEach(el => el.remove());
-
-    document.getElementById("pressCount").textContent = "0";
+let counter = document.getElementById("pressCount");
+if (counter) counter.textContent = "0";
 }
