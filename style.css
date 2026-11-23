@@ -21,3 +21,22 @@
  }
 
 
+.deepfried{
+	animation: deepfry infinite 2s alternate;
+}
+
+img{
+width: 100%;
+}
+@keyframes deepfry{
+    from{
+        filter:contrast(0.001) brightness(0.9996) blur(0.1px) contrast(1000);
+    }
+    to{
+        filter:contrast(0.001) brightness(1.001) blur(0.1px) contrast(1000)
+    }
+}
+
+* {
+    justify-content: center;
+}

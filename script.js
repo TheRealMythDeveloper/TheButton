@@ -1,7 +1,7 @@
 const effects = [
 shrinkPage,
 washingMachine,
-//crunchyColors,
+crunchyColors,
 //crunchyAudio, 
 //possibly ^
 //notification,
@@ -13,6 +13,14 @@ growPage,
 //TechnicallyCorrect
 ];
  
+
+
+function crunchyColors() {
+    let page = document.getElementById("deepFryable");
+
+    page.classList.add("deepfried");
+}
+
 
 let button = document.getElementById("bigButton");
 function pressButton() {
