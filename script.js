@@ -9,9 +9,9 @@ growPage,
 askew,
 //partiallyWrongSpelling,
 //TechnicallyCorrect
-];
+]; 
  
-
+          
 
 let particleAnimation;
 let particles = [];

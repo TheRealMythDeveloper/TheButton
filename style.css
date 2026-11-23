@@ -30,7 +30,7 @@
  }
 
 .deepfried{
-	animation: deepfry infinite 2s alternate;
+	animation: deepfry infinite 5s;
 }
 
 
@@ -56,7 +56,7 @@ z-index:1;
 }
 
 #gradient {
-        background: radial-gradient(circle at center, white 0%, #777 35%, black 100%);
+    background: radial-gradient(circle at center, rgb(215, 149, 149) 0%, #db6c6c 35%, rgb(155, 82, 82) 100%);
 
 
         
