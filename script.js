@@ -146,28 +146,32 @@ const text = [
 95,
 "...",
 110,
-"Got you - Myth",
-
+"Got you - Myth", //rickroll?
+115,
 "also bomb",
 "",
 
 500
 ];
 
+let counterText = 0;
+
+
 function changeText() {
+    let current = text[counterText];
 
-if (typeof text[counterText] === "string") {
-    
-let buttontext = document.getElementById("buttonText").textContent = text[counterText];
-    break;
+    if (typeof current === "string") {
+        document.getElementById("buttonText").textContent = current;
+        counterText++;
+        return;
+    }
 
-} else {
-  if (counterTick > text[counterText]) {
-    break
-  } else {
-let buttontext = document.getElementById("buttonText").textContent = text[counterText];
-  }
-}
+    if (typeof current === "number") {
+        if (counterTick >= current) {
+            counterText++;
+            changeText();
+        }
+    }
 }
 
 button.addEventListener("click", pressButton);
