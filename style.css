@@ -1,28 +1,33 @@
  #body {
-    background: radial-gradient(circle at center, white 0%, #777 35%, black 100%);
+    background: radial-gradient(circle at center, rgb(215, 149, 149) 0%, #db6c6c 35%, rgb(155, 82, 82) 100%);
     overflow: hidden;
     text-align: center;
  }
  #bigButton {
-    background-color: red;
+    background-color: rgb(226, 38, 38);
     color:black;
-    box-shadow: inset;
+    box-shadow:#777;
     position: center;
     justify-content: center;
     align-items: center;
     aspect-ratio: 1;
-    display:block;
-    margin: 0 auto;
+   
     display: flex;
     height: 100px;
     width: 100px;
     position:absolute;
-    left: 50%;
+    left: 45%;
     top: 50%;
     border-radius: 50%;
     z-index:2;
  }
 
+ #resetButton {
+    position: right;
+    justify-content: center;
+    padding-bottom:90%;
+    background-color: rgb(102, 102, 167);
+ }
 
 .deepfried{
 	animation: deepfry infinite 2s alternate;
@@ -42,7 +47,7 @@
     justify-content: center;
 }
 
-h1{
+#buttonText {
 align-items: center;
 justify-content: center;
 position: center;
