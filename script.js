@@ -43,7 +43,7 @@ function shrinkPage() {
 document.getElementById("blueButton").addEventListener("click", blueReset);
 function blueReset() {
     document.body.removeAttribute("style");
-    document.body.className = "";
+    document.body.className = ""; 
     spinAmount = 0;
 
     const button = document.getElementById("bigButton");

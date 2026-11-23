@@ -3,12 +3,21 @@
     text-align: center;
  }
  #bigButton {
-    color: red;
+    background-color: red;
+    color:black;
     box-shadow: inset;
     position: center;
     justify-content: center;
     align-items: center;
-    size: 100px;
-    
+    size: 1000px;
+    display:block;
+    margin: 0 auto;
+    display: flex;
+    height: 50px;
+    width: 100px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
  }
+
 
