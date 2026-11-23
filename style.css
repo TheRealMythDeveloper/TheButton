@@ -1,5 +1,6 @@
  #body {
-    background: white;
+    background: radial-gradient(circle at center, white 0%, #777 35%, black 100%);
+    
     text-align: center;
  }
  #bigButton {
