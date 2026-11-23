@@ -93,10 +93,81 @@ function notification() {
 }
 
 let button = document.getElementById("bigButton");
+let counterTick = 0;
 
 function pressButton() {
     let effect = effects[Math.floor(Math.random() * effects.length)];
     effect(); 
+    let counter = document.getElementById("buttonText");
+   
+    counterTick++;
+    changeText();
+}
+const text = [
+    "Oh",
+    "hello",
+    "Welcome to the button room",
+    5,
+    "I see you are enjoying yourself",
+    10,
+    "I don't know how you are still intrested with this stupid button",
+    12,
+    "I never invited you in here",
+    "so technically you are tresspassing",
+    20,
+    "please leave?",
+    25,
+    "no?",
+    30,
+    "..",
+    40,
+    "fine.",
+    42,
+    "It isn't my button anyways",
+    45,
+    "I don't know what it does",
+    50,
+"to be honest, I've been to scared to click it.",
+52,
+"and then you come along",
+55,
+"and just press away!!",
+65,
+"seriously.",
+"you don't know what this thing could even do!",
+75,
+"what if it blows up!",
+80,
+"or..",
+85,
+"what if..",
+90,
+"it were to..",
+95,
+"...",
+110,
+"Got you - Myth",
+
+"also bomb",
+"",
+
+500
+];
+
+function changeText() {
+
+if (typeof text[counterText] === "string") {
+    
+let buttontext = document.getElementById("buttonText").textContent = text[counterText];
+    break;
+
+} else {
+  if (counterTick > text[counterText]) {
+    break
+  } else {
+let buttontext = document.getElementById("buttonText").textContent = text[counterText];
+  }
+}
 }
 
 button.addEventListener("click", pressButton);
