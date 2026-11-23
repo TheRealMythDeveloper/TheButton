@@ -5,13 +5,17 @@ crunchyColors,
 notification,
 spawnParticles,
 growPage,
-//buttonExplode,
+buttonExplode,
 askew,
 //partiallyWrongSpelling,
 //TechnicallyCorrect
 ]; 
- 
-          
+
+function buttonExplode() {
+    let explode = document.getElementById("gif");
+    explode.classList.remove("noexplosion");
+    explode.classList.add("explosion");
+}
 
 let particleAnimation;
 let particles = [];
@@ -140,6 +144,10 @@ particles = [];
     const button = document.getElementById("bigButton");
     button.removeAttribute("style");
  alreadySkewed = false;
+
+ let explode = document.getElementById("gif");
+explode.classList.add("noexplosion");
+    explode.classList.remove("explosion");
 
     document.querySelectorAll(".temporary, .particle").forEach(el => el.remove());
 let counter = document.getElementById("pressCount");

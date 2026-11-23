@@ -68,3 +68,19 @@ z-index:1;
     position:fixed;
     pointer-events: none;
 }
+.noexplode {
+visibility:hidden;
+}
+
+.explosion {
+    visibility: visible;
+    position: center;
+    left:50%;
+    bottom:40%;
+    size: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#gif {
+    filter:contrast(10);
+}
