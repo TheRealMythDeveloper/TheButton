@@ -7,11 +7,10 @@ spawnParticles,
 growPage,
 buttonExplode,
 askew,
-//partiallyWrongSpelling,
-//TechnicallyCorrect
-]; 
 
-function buttonExplode() {
+];  
+
+function buttonExplode() {  
     let explode = document.getElementById("gif");
     explode.classList.remove("noexplosion");
     explode.classList.add("explosion");
@@ -48,7 +47,7 @@ for (let i = 0; i < 120; i++) {
     //squareorcircle
     if (Math.random() > 0.5) {
         p.style.borderRadius = "50%";
-    }
+    }   
     //color
     p.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 50%)`;
 

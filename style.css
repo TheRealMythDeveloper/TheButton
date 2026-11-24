@@ -1,15 +1,15 @@
 /* bodddy */
-body, #body {
+body, #body { 
     background: radial-gradient(circle, #382020 0%, #1b1010 55%, #090707 100%);
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
     overflow: hidden;
     margin: 0;
-    width: 100vw;
+    width: 100vw; 
     height: 100vh;
 }
-
+     
 /*buttttonnn*/
 #bigButton {
     position: fixed;
@@ -50,10 +50,10 @@ body, #body {
         0 4px 0 #510000,
         0 8px 15px #000000aa;
 }
-
-/*button*/
+   
+/*button*/  
 #buttonText {
-    position: fixed;
+    position: fixed; 
     top: 25%;
     left: 50%;
     transform: translateX(-50%);
@@ -135,7 +135,8 @@ body, #body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 20;
+    z-index: 99990;
+
 }
 
 #gif {
