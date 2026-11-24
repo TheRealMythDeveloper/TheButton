@@ -43,7 +43,7 @@ function buttonTwo() {
 function buttonExplode() {  
     let explode = document.getElementById("gif");
     explode.classList.remove("noexplosion");
-    
+     
     explode.classList.add("explosion");
     sleep(1000);
     
