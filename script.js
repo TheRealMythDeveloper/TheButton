@@ -9,20 +9,20 @@ shrinkPage,
 washingMachine,
 crunchyColors,
 notification,
-spawnParticles,
+spawnParticles, 
 growPage,
 buttonExplode,
 askew,
 splitButton,
-gravity
-];  
+gravityStart 
+];
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 } 
 
-function gravity() {
+function gravityStart() {
    gravity.resumeSimulation(); 
-}
+}        
 
 function splitButton() {
     let extraButton = document.getElementById("ANOTHERBUTTON");
