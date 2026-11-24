@@ -1,3 +1,6 @@
+window.addEventListener("load", () => {
+    gravity.pauseSimulation();
+});
 const effects = [
 shrinkPage,
 washingMachine,
