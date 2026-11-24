@@ -256,10 +256,10 @@ function changeText() {
         }
     }
 }
-
+ 
 button.addEventListener("click", pressButton);
 
-
+  
  let spinAmount = 0;
  
 function washingMachine() {
