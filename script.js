@@ -1,3 +1,4 @@
+let gravityActive = false;
 window.addEventListener("load", () => {
     gravity.pauseSimulation();
 });
@@ -21,9 +22,9 @@ function gravity() {
    gravity.resumeSimulation(); 
 gravity.applyImpulse("bigButton", 0, 300);}
 function splitButton() {
-    let buttonTwo = document.getElementById("ANOTHERBUTTON");
-    buttonTwo.classList.remove("hidden");
-    buttonTwo.addEventListener("click", buttonTwo); 
+    let extraButton = document.getElementById("ANOTHERBUTTON");
+    extraButton.classList.remove("hidden");
+extraButton.addEventListener("click", buttonTwo); 
 }   
    
 function buttonTwo() {
@@ -307,7 +308,8 @@ explode.classList.add("noexplosion");
 
     document.querySelectorAll(".temporary, .particle").forEach(el => el.remove());
 let counter = document.getElementById("pressCount");
-
+gravity.pauseSimulation();
+gravityActive = "false";
 if (counter) counter.textContent = "0";
 
 document.getElementById("deepFryable").classList.remove("deepfried");
