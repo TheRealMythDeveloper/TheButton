@@ -41,15 +41,15 @@ function buttonTwo() {
         buttonTwo.classList.add("hidden");
 }
 
-function buttonExplode() {  
+async function buttonExplode() {  
     let explode = document.getElementById("gif");
     explode.classList.remove("noexplosion");
      
     explode.classList.add("explosion");
-    sleep(1000);
+    await sleep(1000);
+
     
  explode.classList.remove("explosion");
-    
     explode.classList.add("noexplosion");
     
 }
@@ -227,22 +227,24 @@ const text = [
 
 let counterText = 0;
 
-function checkRick() {
+async function checkRick() {
     if (counterTick === 110){
         let rick = document.getElementById("Rick");
         rick.classList.add("rick");
         rick.classList.remove("noRick");
-        sleep(10000);
+            await sleep(10000);
+
         rick.classList.remove("rick");
         rick.classList.add("noRick");
     }
 }
-function checkBoom() {
+async function checkBoom() {
     if (counterTick === 115){
         let rick = document.getElementById("gif");
         rick.classList.add("nuke");
         rick.classList.remove("nonuke");
-        sleep(10000);
+        await sleep(1000);
+
         rick.classList.remove("nuke");
         rick.classList.add("nonuke");
     }
@@ -316,7 +318,7 @@ explode.classList.add("noexplosion");
     document.querySelectorAll(".temporary, .particle").forEach(el => el.remove());
 let counter = document.getElementById("pressCount");
 gravity.pauseSimulation();
-gravityActive = "false";
+gravityActive = false;
 if (counter) counter.textContent = "0";
 
 document.getElementById("deepFryable").classList.remove("deepfried");

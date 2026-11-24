@@ -25,7 +25,6 @@ body, #body {
     position: fixed;
     left: 47%;
     top: 53%;
-    transform: translate(-50%, -50%);
 
     width: 145px;
     height: 145px;
@@ -63,10 +62,10 @@ body, #body {
    
 /*button*/  
 #buttonText {
-    position: fixed; 
+    position: relative; 
     top: 25%; 
     left: 45%; 
-    transform: translateX(-50%);
+   /*transform: translateX(-50%);*/
 
     width: min(80%, 600px);
     color: #f5eeee;
