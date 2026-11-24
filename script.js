@@ -15,14 +15,14 @@ function sleep(ms) {
 } 
 
 function gravity() {
-    //ummm lets see. how do i replicate gravity in css? I know how to with input but thats only on one object
-}
+   gravity.resumeSimulation();
+gravity.applyImpulse("bigButton", 0, 300);}
 function splitButton() {
     let buttonTwo = document.getElementById("ANOTHERBUTTON");
     buttonTwo.classList.remove("hidden");
     buttonTwo.addEventListener("click", buttonTwo); 
-}  
-
+}   
+   
 function buttonTwo() {
       let rick = document.getElementById("Rick");
         rick.classList.add("rick");
