@@ -18,7 +18,7 @@ function sleep(ms) {
 } 
 
 function gravity() {
-   gravity.resumeSimulation();
+   gravity.resumeSimulation(); 
 gravity.applyImpulse("bigButton", 0, 300);}
 function splitButton() {
     let buttonTwo = document.getElementById("ANOTHERBUTTON");
