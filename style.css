@@ -23,7 +23,7 @@ body, #body {
 /*buttttonnn*/
 #bigButton {
     position: fixed;
-    left: 50%;
+    left: 47%;
     top: 53%;
     transform: translate(-50%, -50%);
 
@@ -65,7 +65,7 @@ body, #body {
 #buttonText {
     position: fixed; 
     top: 25%; 
-    left: 50%; 
+    left: 45%; 
     transform: translateX(-50%);
 
     width: min(80%, 600px);
