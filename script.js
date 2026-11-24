@@ -7,17 +7,21 @@ spawnParticles,
 growPage,
 buttonExplode,
 askew,
-splitButton
+splitButton,
+gravity
 ];  
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
-}
+} 
 
+function gravity() {
+    //ummm lets see. how do i replicate gravity in css? I know how to with input but thats only on one object
+}
 function splitButton() {
     let buttonTwo = document.getElementById("ANOTHERBUTTON");
     buttonTwo.classList.remove("hidden");
-    buttonTwo.addEventListener("click", buttonTwo);
-} 
+    buttonTwo.addEventListener("click", buttonTwo); 
+}  
 
 function buttonTwo() {
       let rick = document.getElementById("Rick");
