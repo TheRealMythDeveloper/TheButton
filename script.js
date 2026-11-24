@@ -1,7 +1,8 @@
-let gravityActive = false;
 window.addEventListener("load", () => {
     gravity.pauseSimulation();
 });
+let gravityActive = false;
+
 
 const effects = [
 shrinkPage,
