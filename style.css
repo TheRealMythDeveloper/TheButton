@@ -22,7 +22,7 @@ body, #body {
 
 /*buttttonnn*/
 #bigButton {
-    position: relative;
+    position: fixed;
     left: 50%;
     top: 53%;
     transform: translate(-50%, -50%);
