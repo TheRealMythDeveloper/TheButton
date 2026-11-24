@@ -7,10 +7,27 @@ spawnParticles,
 growPage,
 buttonExplode,
 askew,
-
+splitButton
 ];  
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function splitButton() {
+    let buttonTwo = document.getElementById("ANOTHERBUTTON");
+    buttonTwo.classList.remove("hidden");
+    buttonTwo.addEventListener("click", buttonTwo);
+} 
+
+function buttonTwo() {
+      let rick = document.getElementById("Rick");
+        rick.classList.add("rick");
+        rick.classList.remove("noRick");
+        sleep(2000);
+        rick.classList.remove("rick");
+        rick.classList.add("noRick");
+        let buttonTwo = document.getElementById("ANOTHERBUTTON");
+        buttonTwo.classList.add("hidden");
 }
 
 function buttonExplode() {  
