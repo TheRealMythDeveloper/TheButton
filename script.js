@@ -2,6 +2,7 @@ let gravityActive = false;
 window.addEventListener("load", () => {
     gravity.pauseSimulation();
 });
+
 const effects = [
 shrinkPage,
 washingMachine,
@@ -20,7 +21,8 @@ function sleep(ms) {
 
 function gravity() {
    gravity.resumeSimulation(); 
-gravity.applyImpulse("bigButton", 0, 300);}
+}
+
 function splitButton() {
     let extraButton = document.getElementById("ANOTHERBUTTON");
     extraButton.classList.remove("hidden");

@@ -22,23 +22,22 @@ body, #body {
 
 /*buttttonnn*/
 #bigButton {
-    position: fixed;
+    position: relative;
     left: 50%;
     top: 53%;
+    transform: translate(-50%, -50%);
 
     width: 145px;
     height: 145px;
+    aspect-ratio: 1;
 
     border-radius: 50%;
     border: 7px solid #7d1515;
+    background: radial-gradient(circle at 35% 28%, #ff7777 0%, #ed2727 35%, #a90000 80%, #570000 100%);
 
-    background: radial-gradient(
-        circle at 35% 28%,
-        #ff7777 0%,
-        #ed2727 35%,
-        #a90000 80%,
-        #570000 100%
-    );
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 
     box-shadow:
         0 12px 0 #510000,
@@ -47,6 +46,8 @@ body, #body {
 
     z-index: 2;
     cursor: pointer;
+
+    transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
 }
 
 #bigButton:hover {
