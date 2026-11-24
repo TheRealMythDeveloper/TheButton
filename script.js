@@ -188,17 +188,16 @@ spinAmount += 360 * number;
 }
 let alreadySkewed = false;
 
+ 
 function askew() {
     if (alreadySkewed === false) {
- document.body.style.transform = `rotate(25deg)`;
+     document.body.style.transform = "rotate(25deg)";
+        alreadySkewed = true;
     } else {
-        alreadySkewed = "false"
-         document.body.style.transform = `rotate(-25deg)`;
-
+        document.body.style.transform = "rotate(-25deg)";
+alreadySkewed = false;
     } 
-
- alreadySkewed = true; 
-}
+} 
 
 function growPage() {
     document.getElementById("bigButton").style.transform = "scale(2.75)";
