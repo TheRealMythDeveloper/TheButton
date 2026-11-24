@@ -316,5 +316,6 @@ document.getElementById("deepFryable").classList.remove("deepfried");
 
 }
  
-
+ 
 document.getElementById("blueButton").addEventListener("click", blueReset);
+   
