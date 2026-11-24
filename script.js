@@ -43,8 +43,13 @@ function buttonTwo() {
 function buttonExplode() {  
     let explode = document.getElementById("gif");
     explode.classList.remove("noexplosion");
-    sleep(1000);
+    
     explode.classList.add("explosion");
+    sleep(1000);
+    
+ explode.classList.remove("explosion");
+    
+    explode.classList.add("noexplosion");
     
 }
 
@@ -260,9 +265,8 @@ function changeText() {
 }
  
 button.addEventListener("click", pressButton);
-
   
- let spinAmount = 0;
+ let spinAmount = 0; 
  
 function washingMachine() {
     let number = Math.floor(Math.random() * 10) +1;
