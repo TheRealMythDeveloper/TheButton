@@ -177,8 +177,40 @@ const text = [
 115,
 "also bomb",
 "",
+200,
+"You have nothing better to do.. huh.",
+300,
+"how in the world are you still going?",
+450,
+"I give up.",
 
-500
+
+500,
+"Have fun with the button.. you obviously like it a lot.",
+
+1000,
+"If you made it this far.. thats just impressive.",
+1500,
+"I commend you for you amazingness."
+2000,
+"I declare you king of button. - Myth",
+5000,
+"what more do you want",
+"to be the emperor?",
+"Thats a lot of power you know,",
+"I couldn't take that much..",
+"I wouldnt.",
+"You should stop before you lose your mind",
+"Trust me",
+"Its not a good Idea.",
+"Look at all the disney movies!!",
+"*Sigh*",
+"You know what?",
+"Its a button."
+"You may be..",
+"The dictator.",
+"You are very welcome.",
+"goodbye mr.dictator."
 ];
 
 let counterText = 0;
