@@ -224,7 +224,7 @@ const text = [
 "You are very welcome.",
 "goodbye mr.dictator."
 ];
-
+ 
 let counterText = 0;
 
 async function checkRick() {
