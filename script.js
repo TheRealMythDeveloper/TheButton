@@ -9,11 +9,16 @@ buttonExplode,
 askew,
 
 ];  
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 function buttonExplode() {  
     let explode = document.getElementById("gif");
     explode.classList.remove("noexplosion");
+    sleep(1000);
     explode.classList.add("explosion");
+    
 }
 
 let particleAnimation;
@@ -101,6 +106,8 @@ function pressButton() {
    
     counterTick++;
     changeText();
+    checkRick();
+    checkBoom();
 }
 const text = [
     "Oh",
@@ -155,6 +162,26 @@ const text = [
 
 let counterText = 0;
 
+function checkRick() {
+    if (counterTick === 110){
+        let rick = document.getElementById("Rick");
+        rick.classList.add("rick");
+        rick.classList.remove("noRick");
+        sleep(10000);
+        rick.classList.remove("rick");
+        rick.classList.add("noRick");
+    }
+}
+function checkBoom() {
+    if (counterTick === 115){
+        let rick = document.getElementById("gif");
+        rick.classList.add("nuke");
+        rick.classList.remove("nonuke");
+        sleep(10000);
+        rick.classList.remove("nuke");
+        rick.classList.add("nonuke");
+    }
+}
 
 function changeText() {
     let current = text[counterText];
