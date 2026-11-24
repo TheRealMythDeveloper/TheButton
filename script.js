@@ -191,7 +191,7 @@ const text = [
 1000,
 "If you made it this far.. thats just impressive.",
 1500,
-"I commend you for you amazingness."
+"I commend you for you amazingness.",
 2000,
 "I declare you king of button. - Myth",
 5000,
@@ -206,7 +206,7 @@ const text = [
 "Look at all the disney movies!!",
 "*Sigh*",
 "You know what?",
-"Its a button."
+"Its a button.",
 "You may be..",
 "The dictator.",
 "You are very welcome.",
