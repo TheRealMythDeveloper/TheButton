@@ -40,11 +40,18 @@ function splitButton() {
 extraButton.addEventListener("click", buttonTwo); 
 }   
    
-function buttonTwo() {
+async function buttonTwo() {
       let rick = document.getElementById("Rick");
         rick.classList.add("rick");
         rick.classList.remove("noRick");
-        sleep(2000);
+try {
+    await rick.play();
+} catch(error) {
+    window.alert("RICKROLL"); 
+}
+await sleep(10000);
+rick.pause();
+        
         rick.classList.remove("rick");
         rick.classList.add("noRick");
         let buttonTwo = document.getElementById("ANOTHERBUTTON");
@@ -242,7 +249,14 @@ async function checkRick() {
         let rick = document.getElementById("Rick");
         rick.classList.add("rick"); 
         rick.classList.remove("noRick");
-            await sleep(10000);
+          try {
+    await rick.play();
+} catch(error) {
+    window.alert("RICKROLL");
+}
+await sleep(10000);
+rick.pause();
+        
 
         rick.classList.remove("rick");
         rick.classList.add("noRick");
