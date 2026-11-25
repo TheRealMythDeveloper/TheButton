@@ -6,8 +6,8 @@ let gravityActive = false;
 
 const effects = [
 shrinkPage,
-washingMachine,
-moveButton,
+washingMachine, 
+moveButton,  
 crunchyColors,
 notification,
 spawnParticles, 
