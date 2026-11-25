@@ -58,23 +58,16 @@ body, #body {
     box-shadow:
         0 4px 0 #510000,
         0 8px 15px #000000aa;
-}
+} 
    
-/*button*/  
+/*button transform reducementt*/   
 #buttonText {
-    position: relative; 
-    top: 25%; 
-    left: 45%; 
-   /*transform: translateX(-50%);*/
-
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: min(80%, 600px);
-    color: #f5eeee;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-
-    z-index: 3;
-    text-shadow: 0 2px 8px black;
+    z-index: 2;
 }
 
 #resetButton, #blueButton {

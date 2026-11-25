@@ -14,7 +14,7 @@ spawnParticles,
 growPage,
 buttonExplode,
 askew, 
-splitButton,
+splitButton, 
 gravityStart 
 ];
 function sleep(ms) {
