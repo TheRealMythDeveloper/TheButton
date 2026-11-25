@@ -7,19 +7,29 @@ let gravityActive = false;
 const effects = [
 shrinkPage,
 washingMachine,
+moveButton,
 crunchyColors,
 notification,
 spawnParticles, 
 growPage,
 buttonExplode,
-askew,
+askew, 
 splitButton,
 gravityStart 
 ];
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 } 
+function moveButton() {
+    let button = document.getElementById("bigButton");
 
+    let x = Math.random() * (window.innerWidth - button.offsetWidth);
+    let y = Math.random() * (window.innerHeight - button.offsetHeight);
+
+    button.style.left = x + "px";
+    button.style.top = y + "px";
+ 
+}
 function gravityStart() {
    gravity.resumeSimulation(); 
 }        
@@ -225,12 +235,12 @@ const text = [
 "goodbye mr.dictator."
 ];
  
-let counterText = 0;
+let counterText = 0;  
 
 async function checkRick() {
     if (counterTick === 110){
         let rick = document.getElementById("Rick");
-        rick.classList.add("rick");
+        rick.classList.add("rick"); 
         rick.classList.remove("noRick");
             await sleep(10000);
 
