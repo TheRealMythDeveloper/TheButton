@@ -36,8 +36,13 @@ function gravityStart() {
 
 function splitButton() {
     let extraButton = document.getElementById("ANOTHERBUTTON");
+        let extraButton2 = document.getElementById("ANOTHERBUTTON2");
+
     extraButton.classList.remove("hidden");
+    extraButton2.classList.remove("hidden");
 extraButton.addEventListener("click", buttonTwo); 
+extraButton2.addEventListener("click", buttonTwo); 
+
 }   
    
 async function buttonTwo() {
@@ -55,7 +60,10 @@ rick.pause();
         rick.classList.remove("rick");
         rick.classList.add("noRick");
         let buttonTwo = document.getElementById("ANOTHERBUTTON");
+                let buttonTwo2 = document.getElementById("ANOTHERBUTTON2");
+
         buttonTwo.classList.add("hidden");
+        buttonTwo2.classList.add("hidden");
 }
 
 async function buttonExplode() {  
@@ -70,7 +78,7 @@ async function buttonExplode() {
     explode.classList.add("noexplosion");
     
 }
-
+ 
 let particleAnimation;
 let particles = [];
 
@@ -121,10 +129,14 @@ animateParticles();
 }
 
 
-function crunchyColors() {
+async function crunchyColors() {
     let page = document.getElementById("deepFryable");
 
-    page.classList.add("deepfried");
+    page.classList.add("deepfried"); 
+    await sleep(5000);
+        page.classList.remove("deepfried"); 
+
+
 }
 
 const alertList = [
