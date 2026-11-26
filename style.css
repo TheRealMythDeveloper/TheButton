@@ -106,6 +106,7 @@ body, #body {
 .hidden {
     visibility: hidden;
 }
+.color { filter: invert(1) hue-rotate(180deg); }
 #bigButton:hover {
     filter: brightness(1.15);
 }

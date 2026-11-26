@@ -15,8 +15,11 @@ growPage,
 buttonExplode,
 askew, 
 splitButton, 
-gravityStart 
+gravityStart,
+invertColors 
 ];
+
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 } 
@@ -54,7 +57,7 @@ try {
 } catch(error) {
     window.alert("RICKROLL"); 
 }
-await sleep(10000);
+await sleep(2000);
 rick.pause();
         
         rick.classList.remove("rick");
@@ -78,7 +81,18 @@ async function buttonExplode() {
     explode.classList.add("noexplosion");
     
 }
- 
+ async function invertColors() {  
+    let explode = document.getElementById("gradient");
+   
+     
+    explode.classList.add("color");
+    await sleep(1000);
+
+    
+ explode.classList.remove("color");
+   
+    
+}
 let particleAnimation;
 let particles = [];
 
